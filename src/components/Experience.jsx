@@ -5,19 +5,48 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "GirlScript Summer of Code 2025 (GSSoC)",
+    sub_title: "Open Source Contributor",
+    date: "July 2025 - Present",
+    description:
+      "Contributing to open-source projects under GirlScript Summer of Code 2025, collaborating with maintainers and improving real-world codebases through active PRs and discussions.",
+    // image: "/assets/hackathon2.jpeg",
+  },
+  {
+    title: "SheFi Cohort 7",
+    sub_title: "Web3 & DeFi Learner",
+    date: "July 2025 - Present",
+    description:
+      "Exploring the intersection of Web3 and finance through SheFi’s community-led program, participating in live sessions and deepening understanding of decentralized technologies.",
+    // image: "/assets/hackathon2.jpeg",
+  },
+  {
+    title: "Codess.Cafe",
+    sub_title: "Machine Learning Cohort",
+    date: "May 2025 - Present",
+    description:
+      "Engaging in a structured ML cohort to strengthen foundational concepts, work on projects, and grow alongside a vibrant women-in-tech community.",
+    // image: "/assets/hackathon2.jpeg",
+  },
+  {
     title: "Hackathon Coordinator",
+    sub_title: "National Science Day | USBAS, GGSIPU",
+    date: "28 February 2025",
     description:
       "Co-organized a university hackathon with over 240 registrations, managing planning, outreach, and logistics. Learned effective coordination, time management, and how to execute large-scale tech events smoothly.",
     // image: "/assets/hackathon2.jpeg",
   },
   {
-    title: "IEEE Design-a-Con",
+    title: "Design-a-Con",
+    sub_title: "IEEE GGSIPU",
+    date: "26 November 2024",
     description:
-      "Secured 3rd place in a team of two at IEEE GGSIPU’s Design-a-Con by designing a creative website based on a fictional character. The experience sharpened my UI/UX thinking, pushed my creative boundaries, and strengthened collaboration under time constraints.",
+      "Secured 3rd place in a team of two at Design-a-Con, part of Synapse 10.0, IEEE GGSIPU’s annual tech week. Designed a creative website based on a fictional character, an experience that sharpened my UI/UX skills and collaboration under time constraints.",
     // image: "/assets/design2.jpeg",
   },
   {
     title: "International Python Coding Challenge",
+    date: "2022",
     description:
       "Placed 17th globally in the Raffles University Python Coding Challenge 2022, competing among international participants. The experience deepened my logical thinking and problem-solving skills, and earned me a scholarship opportunity from Raffles University, Malaysia.",
     // image: "/ieee.jpg",
@@ -67,9 +96,11 @@ const Experience = () => {
                       />
                     </div> */}
                     <div className="w-full text-left">
-                      <h3 className="text-xl font-bold mb-2 text-white">
+                      <h3 className="text-xl font-bold mb-1 text-white">
                         {exp.title}
                       </h3>
+                      <p className="italic text-md text-gray-400">{exp.sub_title}</p>
+                      <p className="text-sm text-gray-500 mb-2">{exp.date}</p>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {exp.description}
                       </p>
@@ -78,9 +109,11 @@ const Experience = () => {
                 ) : (
                   <>
                     <div className="w-full text-left">
-                      <h3 className="text-xl font-bold mb-2 text-white">
+                      <h3 className="text-xl font-bold mb-1 text-white">
                         {exp.title}
                       </h3>
+                      <p className="italic text-md text-gray-400">{exp.sub_title}</p>
+                      <p className="text-sm text-gray-500 mb-2">{exp.date}</p>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {exp.description}
                       </p>

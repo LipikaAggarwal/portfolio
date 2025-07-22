@@ -5,14 +5,23 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
+   {
+    title: "WildFire Segmentation",
+    description:
+      "A U-Net–based wildfire detection system that segments fire zones from aerial imagery for real-time disaster monitoring. Enhances emergency response and risk assessment through accurate visual analysis.",
+    image: ["/assets/wildfire.png"],
+    github: "https://github.com/LipikaAggarwal/WildFire-Segmentation",
+    // live: "https://acm-landing.vercel.app",
+    tech: ["Python", "PyTorch", "OpenCV", "Jupyter Notebook", "NumPy", "Matplotlib"],
+  },
   {
     title: "Resume Analyser",
     description:
-      "Responsive club website built with Next.js and TailwindCSS, with transition effects, contact form, and event highlights.",
+      "A smart web tool that scans resumes, checks key sections and keywords, and gives real-time feedback to improve job-fit and resume quality.",
     image: ["/assets/resume.png", "/assets/resume1.png", "/assets/resume2.png"],
     github: "https://github.com/LipikaAggarwal/resume-analyser",
     // live: "https://acm-landing.vercel.app",
-    tech: ["Next.js","Express.js", "TailwindCSS"],
+    tech: [ "JavaScript", "Node.js", "Express.js", "Next.js", "Tailwind CSS"],
   },
   {
     title: "GPU Memory Estimator",

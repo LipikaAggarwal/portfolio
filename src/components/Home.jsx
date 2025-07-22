@@ -9,7 +9,6 @@ const About = () => {
     "a tech enthusiast",
     "a web developer",
     "a Python coder",
-    "learning Java",
     "an AI/ML enthusiast",
     "a problem solver",
   ];

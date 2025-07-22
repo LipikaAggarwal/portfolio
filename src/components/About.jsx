@@ -2,6 +2,7 @@
 
 import React from "react";
 import { SiTailwindcss, SiExpress, SiMysql, } from "react-icons/si";
+import { SiPytorch, SiNumpy, SiOpencv, SiJupyter, SiMatplotlib } from "react-icons/si";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -27,7 +28,11 @@ const skills = [
   { name: "Java", icon: <FaJava className="text-red-600" /> },
   { name: "Git", icon: <FaGit className="text-orange-600" /> },
   { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
-  { name: "SQL", icon: <SiMysql className="text-blue-400" /> }
+  { name: "SQL", icon: <SiMysql className="text-blue-400" /> },
+  { name: "PyTorch", icon: <SiPytorch className="text-red-500" /> },
+  { name: "NumPy", icon: <SiNumpy className="text-yellow-400" /> },
+  { name: "OpenCV", icon: <SiOpencv className="text-blue-500" /> },
+  { name: "Jupyter Notebook", icon: <SiJupyter className="text-orange-400" /> },
 ];
 
 const AboutSection = () => {

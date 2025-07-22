@@ -69,6 +69,10 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+        <footer className="text-gray-300 text-center py-4 mt-auto">
+    <div className="mx-8 mb-3 h-[1px] bg-gray-600 opacity-30"></div>
+      <p>© 2025 Lipika. All rights reserved.</p>
+    </footer>
     </div>
   );
 }

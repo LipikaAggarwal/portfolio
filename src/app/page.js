@@ -11,7 +11,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-[#001] to-gray-900 text-white">
+    <div className="min-h-screen bg-[#121212] text-white">
       <Navbar />
 
       <motion.div
@@ -21,6 +21,15 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <Main />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <About />
       </motion.div>
 
       <motion.div
@@ -41,14 +50,6 @@ export default function Home() {
         <Experience />
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <About />
-      </motion.div>
 
       <motion.section
         id="contact"
@@ -71,7 +72,7 @@ export default function Home() {
       </motion.section>
         <footer className="text-gray-300 text-center py-4 mt-auto">
     <div className="mx-8 mb-3 h-[1px] bg-gray-600 opacity-30"></div>
-      <p>© 2025 Lipika. All rights reserved.</p>
+      <p>© 2025 Lipika. Made with ♥︎ using Next.js</p>
     </footer>
     </div>
   );

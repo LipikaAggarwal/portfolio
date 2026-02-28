@@ -44,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <motion.div
-    id='contact'
+      id="contact"
       initial={{ opacity: 0, x: 30 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
@@ -52,7 +52,7 @@ const ContactForm = () => {
     >
       <form
         onSubmit={handleSubmit}
-        className="relative bg-transparent border border-purple-500/30 rounded-2xl p-8 space-y-6 backdrop-blur-md"
+        className="relative bg-transparent border border-gray-500/30 rounded-2xl p-8 space-y-6 backdrop-blur-md"
       >
         {/* Name Field */}
         <div>
@@ -60,14 +60,14 @@ const ContactForm = () => {
             Name
           </label>
           <motion.input
-            whileFocus={{ scale: 1.02, borderColor: '#a855f7' }}
+            whileFocus={{ scale: 1.02, borderColor: '#9ca3af' }}
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-transparent border border-purple-500/30 rounded-xl focus:outline-none focus:border-purple-500 transition-all duration-300 text-white placeholder-gray-400"
+            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400"
             placeholder="Your name"
           />
         </div>
@@ -78,14 +78,14 @@ const ContactForm = () => {
             Email
           </label>
           <motion.input
-            whileFocus={{ scale: 1.02, borderColor: '#a855f7' }}
+            whileFocus={{ scale: 1.02, borderColor: '#9ca3af' }}
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-transparent border border-purple-500/30 rounded-xl focus:outline-none focus:border-purple-500 transition-all duration-300 text-white placeholder-gray-400"
+            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400"
             placeholder="your.email@example.com"
           />
         </div>
@@ -96,14 +96,14 @@ const ContactForm = () => {
             Message
           </label>
           <motion.textarea
-            whileFocus={{ scale: 1.02, borderColor: '#a855f7' }}
+            whileFocus={{ scale: 1.02, borderColor: '#9ca3af' }}
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-3 bg-transparent border border-purple-500/30 rounded-xl focus:outline-none focus:border-purple-500 transition-all duration-300 text-white placeholder-gray-400 resize-none"
+            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400 resize-none"
             placeholder="Let's build something amazing together..."
           />
         </div>
@@ -113,7 +113,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center gap-2 text-green-400 bg-green-400/10 p-3 rounded-lg border border-green-400/20"
+            className="flex items-center gap-2 text-gray-200 bg-gray-400/10 p-3 rounded-lg border border-gray-400/20"
           >
             <CheckCircle size={20} />
             <span>Email client opened! Please send the email to complete your message.</span>
@@ -124,7 +124,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center gap-2 text-red-400 bg-red-400/10 p-3 rounded-lg border border-red-400/20"
+            className="flex items-center gap-2 text-gray-200 bg-gray-400/10 p-3 rounded-lg border border-gray-400/20"
           >
             <AlertCircle size={20} />
             <span>Unable to open email client. Please email me directly at lipika.aggarwal@yahoo.com</span>
@@ -137,13 +137,17 @@ const ContactForm = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-full flex items-center justify-center gap-3 px-6 py-4 rounded-full font-semibold bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 transition-all duration-300 text-white shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full flex items-center justify-center gap-3 px-6 py-4 rounded-full font-semibold 
+                     bg-gradient-to-r from-gray-400 to-gray-600 
+                     hover:from-gray-300 hover:to-gray-500 
+                     transition-all duration-300 text-gray-900 shadow-md 
+                     disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-              className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
+              className="w-5 h-5 border-2 border-gray-900 border-t-transparent rounded-full"
             />
           ) : (
             <>
